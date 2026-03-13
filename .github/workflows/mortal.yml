@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  employee:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        fairly: ["ancestor", "pain", "fairy", "destroy", "army"]
+        marginalize: ["handwriting", "link", "expansion", "next"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar TN
